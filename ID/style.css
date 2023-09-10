@@ -1,0 +1,170 @@
+/*-----Global Variables-----*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+/*-----Header-----*/
+
+header {
+    height: 8.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #30363d;
+    
+}
+
+header h1 {
+    margin-left: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+/*-----Main-----*/
+
+.container {
+    display: flex;
+    height: 79rem;
+    width: 100%;
+}
+
+/*-----LEFT COLUMN-----*/
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 28%;
+    background-color: rgb(13, 17, 23);
+    border-right: 1px solid #30363d;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 37rem;
+    margin-bottom: 1.5rem;
+}
+
+.photo {
+    width: 25rem;
+    height: auto;
+}
+
+.workandskills-container {
+    width: 100%;
+    height: 100%;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+  
+
+.workandskills-style {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
+    margin-left: 8.7rem;
+    margin-bottom: 2rem;
+}
+
+.workandskills-line-style {
+    position: absolute;
+    height: 1px;
+    width: 17.79rem;
+    background-color: white;
+}
+
+.line-one {
+    left: 16rem;
+    top: 48.5rem;
+}
+
+.line-two {
+    left: 16rem;
+    top: 64.5rem;
+}
+
+.works {
+    font-size: 2rem;
+    color: white;
+    margin-left: 8.7rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.skills {
+    font-size: 2rem;
+    color: white;
+    margin-left: 8.7rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/*-----RIGHT COLUMN-----*/
+
+.right-column {
+    height: 100%;
+    width: 72%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.user-info {
+    margin-left: 4rem;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+
+}
+
+.profile-name {
+    height: 9.89rem;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.speciality {
+    height: 4.89rem;
+    font-size: 2.8rem;
+    font-weight: 100;
+}

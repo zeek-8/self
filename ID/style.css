@@ -93,7 +93,7 @@ header h1 {
     margin-bottom: 2rem;
 }
 
-.workandskills-line-style {
+.line-decoration {
     position: absolute;
     height: 1px;
     width: 17.79rem;
@@ -148,7 +148,7 @@ header h1 {
 }
 
 
-.user-info {
+.contact-principal-information-container {
     display: flex;
     justify-content: start;
     align-items: flex-end;
@@ -166,49 +166,93 @@ header h1 {
     height: 4.89rem;
     font-size: 3rem;
     font-weight: 100;
+    margin-bottom: 6rem;
 }
 
-.user-properties {
-    height: 10rem;
-    font-size: 2.9rem;
+.dynamic-buttons-container-one {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    margin-left: 4rem;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+
+.buttons-one-style {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.timeline-button {
+    cursor: pointer;
+    position: relative;
+    width: 16rem;
+    margin-right: 2.7rem;
+}
+.about-button {
+    cursor: pointer;
+    position: relative;
+    width: 13rem;
+}
+
+
+.eye-closed {
+    cursor: pointer;
+    position: absolute;
+    height: auto;
+    width: 3rem;
+    left: 12.5rem;
+    top: 0.99rem;
+}
+
+.eye-open {
+    cursor: pointer;
+    position: absolute;
+    height: auto;
+    width: 3rem;
+    left: 9.5rem;
+    top: 0.65rem;
+}
+
+
+
+.information-title {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    margin-left: 4rem;
+    height: 5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 3rem;
-}
-
-.about-img {
-    top: 25.3rem;
-    position: absolute;
-    height: 14.5px;
-    width: auto;
-    left: 46.59999rem;
+    color: white;
 }
 
 .line-three {
-    left: 57rem;
-    top: 31.7rem;
+    left: 46.59999rem;
+    top: 33.7rem;
+    width: 41rem;
 }
 
-.contact-information {
+
+.contact-secondary-information-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
+    margin-left: 4rem;
+    color: white;
+    margin-bottom: 4rem;
 }
 
-.contact-info-blue {
-    font-size: 2rem;
-    color: #0089D4;
-}
-
-
-.contact-info-text {
+.contact-properties {
     color: white;
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 0.6rem;
 }
 
-
-.line-four {
-    left: 71rem;
-    top: 54.5rem;
+.contact-values {
+    font-size: 2rem;
+    color: #0089D4;
 }

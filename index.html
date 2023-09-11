@@ -16,7 +16,7 @@
 
                 <!--Profile picture-->
                 <div class="sizer-one"></div>
-                <div class="photo-container"><img class="photo" src="./ID/images/worker.jpg"></div>
+                <div class="photo-container"><img class="photo" src="./ID/images/yo.jpg"></div>
 
                 <!--Work and skills-->
                 <div class="workandskills-container">
@@ -46,11 +46,20 @@
 
                 
                 <div class="dynamic-buttons-container-one">
-                    <div class="timeline-button buttons-one-style">Timeline <img class="eye-closed" src="./ID/images/eyes.png"></div>
-                    <div class="about-button buttons-one-style">About <img class="eye-open" src="./ID/images/eye.png"></div>
+                    <div class="about-button buttons-one-style">About <img id="eye-open" class="eye-open" src="./ID/images/eye.png"> <img id="eye-closed-switch" class="eye-closed" src="./ID/images/eyes.png"></div>
+                    <div class="timeline-button buttons-one-style">Timeline <img id="eye-closed" class="eye-closed" src="./ID/images/eyes.png"> <img id="eye-open-switch" class="eye-open" src="./ID/images/eye.png"></div>
                 </div>
 
-                <div class="dynamic-infomation-container-"></div>
+                <div id="timeline-section">
+                    <div class="bar-one"></div>
+                    <div class="bar-two"></div>
+                    <div class="bar-three"></div>
+
+                    <div class="bar-two-info"><span>Python</span><span>2022</span></div>
+                    <div class="bar-three-info"><span>HTML</span><span>CSS</span><span>JS</span><span>2023</span></div>
+                </div>
+
+                <div id="dynamic-information-container" class="dynamic-information-container">
                     <div class="information-title">Contact Information</div>
 
                     <div class="contact-secondary-information-container">
@@ -76,5 +85,49 @@
 
     </footer>
     
+    <script>
+        const aboutEye = document.getElementById("eye-open");
+        const timelineEye = document.getElementById("eye-closed");
+
+        const aboutEyeSwitch = document.getElementById("eye-closed-switch");
+        const timelineEyeSwitch = document.getElementById("eye-open-switch");
+
+        const dynamicContainer = document.getElementById("dynamic-information-container");
+        const timelineSection = document.getElementById("timeline-section");
+
+        function toggleEye() {
+            if (dynamicContainer.style.display !== "none") {
+                dynamicContainer.style.display = "none"
+                timelineSection.style.display = "flex"
+
+                aboutEye.style.display = "none"
+                timelineEye.style.display = "none"
+                aboutEyeSwitch.style.display = "inline-block"
+                timelineEyeSwitch.style.display = "inline-block"
+            }
+        }
+
+        function toggleAbout() {
+            if (dynamicContainer.style.display !== "block") {
+                dynamicContainer.style.display = "block"
+                timelineSection.style.display = "none"
+
+                aboutEye.style.display = "inline-block"
+                timelineEye.style.display = "inline-block"
+                aboutEyeSwitch.style.display = "none"
+                timelineEyeSwitch.style.display = "none"
+            }
+            
+        }
+
+
+        timelineEye.addEventListener("click", toggleEye);
+        aboutEyeSwitch.addEventListener("click", toggleAbout);
+
+    </script>
 </body>
+
+
+
+
 </html>

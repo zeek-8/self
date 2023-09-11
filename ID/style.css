@@ -77,7 +77,7 @@ header h1 {
 }
 
 .photo {
-    width: 248.69px;
+    width: 332.58px;
     height: auto;
 }
 
@@ -201,13 +201,12 @@ background-color: white;
 }
 
 .timeline-button {
-    cursor: pointer;
     position: relative;
     width: 16rem;
     margin-right: 2.7rem;
+    margin-left: 2.7rem;
 }
 .about-button {
-    cursor: pointer;
     position: relative;
     width: 13rem;
 }
@@ -264,4 +263,106 @@ background-color: white;
 .contact-values {
     font-size: 2rem;
     color: #0089D4;
+}
+
+
+
+
+/*-----Dynamic-----*/
+
+#dynamic-information-container {
+    display: block;
+}
+
+#eye-open-switch {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    height: auto;
+    width: 3rem;
+    left: 12.5rem;
+    top: 0.65rem;
+}
+
+#eye-closed-switch {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    height: auto;
+    width: 3rem;
+    left: 9.5rem;
+    top: 0.99rem;
+}
+
+
+/*-----Timeline-Section-----*/
+
+#timeline-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+    height: 22rem;
+    width: 37.49rem;
+}
+
+
+.bar-one {
+    height: 0.7rem;
+    width: 100%;
+    background-color: #0089D4;
+    top: 1rem;
+    left: 0rem;
+}
+
+.bar-two {
+    position: absolute;
+    height: 4rem;
+    width: 1rem;
+    top: 45rem;
+    left: 49.55rem;
+    background-color: #0089D4;
+}
+
+
+.bar-two-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 39rem;
+    left: 47rem;
+}
+
+
+.bar-three {
+    position: absolute;
+    height: 4rem;
+    width: 1rem;
+    top: 49rem;
+    left: 72.55rem;
+    background-color: #0089D4;
+}
+
+
+.bar-three-info span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.bar-three-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 54rem;
+    left: 70.5rem;
+}
+
+.bar-two-info span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
 }

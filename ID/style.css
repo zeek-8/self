@@ -149,12 +149,11 @@ header h1 {
 
 
 .user-info {
-    margin-left: 4rem;
-    color: white;
     display: flex;
     justify-content: start;
     align-items: flex-end;
-
+    margin-left: 4rem;
+    color: white;
 }
 
 .profile-name {
@@ -165,6 +164,51 @@ header h1 {
 
 .speciality {
     height: 4.89rem;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 100;
+}
+
+.user-properties {
+    height: 10rem;
+    font-size: 2.9rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.about-img {
+    top: 25.3rem;
+    position: absolute;
+    height: 14.5px;
+    width: auto;
+    left: 46.59999rem;
+}
+
+.line-three {
+    left: 57rem;
+    top: 31.7rem;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact-info-blue {
+    font-size: 2rem;
+    color: #0089D4;
+}
+
+
+.contact-info-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+}
+
+
+.line-four {
+    left: 71rem;
+    top: 54.5rem;
 }

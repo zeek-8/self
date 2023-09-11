@@ -7,6 +7,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 h1 {
     font-size: 6rem;
 }
@@ -63,12 +67,17 @@ header h1 {
     align-items: center;
     flex-shrink: 0;
     width: 100%;
-    height: 37rem;
-    margin-bottom: 1.5rem;
+    height: 25.9rem;
+    margin-bottom: 4.5rem;
+}
+
+.sizer-one {
+    height: 10rem;
+    width: 100%;
 }
 
 .photo {
-    width: 25rem;
+    width: 248.69px;
     height: auto;
 }
 
@@ -86,34 +95,39 @@ header h1 {
 
 .workandskills-style {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     font-size: 2rem;
     color: white;
-    margin-left: 8.7rem;
+    margin-left: 20.5%;
     margin-bottom: 2rem;
+    width: 59.49%;
+    flex-direction: row;
 }
 
 .line-decoration {
-    position: absolute;
-    height: 1px;
-    width: 17.79rem;
-    background-color: white;
+
+height: 1px;
+
+margin-left: 2rem;
+
+margin-top: 4px;
+
+width: 100%;
+
+background-color: white;
 }
 
-.line-one {
-    left: 16rem;
-    top: 48.5rem;
-}
+
 
 .line-two {
-    left: 16rem;
-    top: 64.5rem;
+    left: 7rem;
+    top: 1.5rem;
 }
 
 .works {
     font-size: 2rem;
     color: white;
-    margin-left: 8.7rem;
+    margin-left: 20.5%;
     margin-bottom: 0.5rem;
     font-weight: 300;
 }
@@ -129,7 +143,7 @@ header h1 {
 .skills {
     font-size: 2rem;
     color: white;
-    margin-left: 8.7rem;
+    margin-left: 20.5%;
     margin-bottom: 0.5rem;
     font-weight: 300;
 }
@@ -171,11 +185,13 @@ header h1 {
 
 .dynamic-buttons-container-one {
     display: flex;
-    justify-content: start;
-    align-items: flex-end;
+    align-items: center;
     margin-left: 4rem;
     color: white;
     margin-bottom: 4rem;
+    border-bottom: 2px solid white;
+    width: 40.69rem;
+    height: 4.7rem;
 }
 
 
@@ -228,13 +244,6 @@ header h1 {
     margin-bottom: 3rem;
     color: white;
 }
-
-.line-three {
-    left: 46.59999rem;
-    top: 33.7rem;
-    width: 41rem;
-}
-
 
 .contact-secondary-information-container {
     display: flex;

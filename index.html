@@ -7,15 +7,11 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>user</h1>
-    </header>
     <main>
-        <div class="container">
+        <div id="container" class="container">
             <div class="left-column">
 
                 <!--Profile picture-->
-                <div class="sizer-one"></div>
                 <div class="photo-container"><img class="photo" src="./ID/images/yo.jpg"></div>
 
                 <!--Work and skills-->
@@ -51,12 +47,17 @@
                 </div>
 
                 <div id="timeline-section">
-                    <div class="bar-one"></div>
-                    <div class="bar-two"></div>
-                    <div class="bar-three"></div>
-
-                    <div class="bar-two-info"><span>Python</span><span>2022</span></div>
-                    <div class="bar-three-info"><span>HTML</span><span>CSS</span><span>JS</span><span>2023</span></div>
+                    <div class="timeline-list">
+                        <span class="time-text-title">2022</span>
+                        <span class="timeline-text">Python</span>
+                    </div>
+                    <div class="timeline-list timeline-list-two">
+                        <span class="time-text-title">2023</span>
+                        <span class="timeline-text">HTML</span>
+                        <span class="timeline-text">CSS</span>
+                        <span class="timeline-text">JS</span>
+                        <span class="timeline-text">Git & Github</span>
+                    </div>
                 </div>
 
                 <div id="dynamic-information-container" class="dynamic-information-container">
@@ -80,9 +81,46 @@
 
             </div>
         </div>
-    </main>
-    <footer>
 
+        <div id="mobile-container">
+            <nav class="mobile-nav-container">
+                <img id="mobile-nav-button" src="./ID/images/mobile-nav-button.png">
+            </nav>
+
+            <div class="color">
+                <div class="mobile-photo-container">
+                    <img class="mobile-profile-photo" src="./ID/images/yo.jpg">
+                    <div class="mobile-profile-name-container">
+                        <span class="mobile-name font-white">Hugo Gonzalez Alvarez</span>
+                        <span class="mobile-speciality font-white ">Front End Developer</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="mobile-work-container">
+                <span class="mobile-work-title font-white">WORK</span>
+                <div class="mobile-work-text-container">
+                    <span class="mobile-work-skills-text font-white">Currently Studying</span>
+                    <span class="mobile-work-skills-text font-white">Freelancer</span>
+                </div>
+            </div>
+            <div id="mobile-skills-container">
+
+                <span class="mobile-skills-title font-white">SKILLS</span>
+
+                <div class="mobile-skills-text-container">
+                    <span class="mobile-work-skills-text font-white">HTML</span>
+                    <span class="mobile-work-skills-text font-white">CSS</span>
+                    <span class="mobile-work-skills-text font-white">JS</span>
+                    <span class="mobile-work-skills-text font-white">Git & Github</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
     </footer>
     
     <script>
@@ -94,6 +132,8 @@
 
         const dynamicContainer = document.getElementById("dynamic-information-container");
         const timelineSection = document.getElementById("timeline-section");
+
+        const container = document.getElementById("container");
 
         function toggleEye() {
             if (dynamicContainer.style.display !== "none") {

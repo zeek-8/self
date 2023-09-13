@@ -25,16 +25,6 @@ h3 {
 
 /*-----Header-----*/
 
-header {
-    height: 8.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 1px solid #30363d;
-    
-}
 
 header h1 {
     margin-left: 2rem;
@@ -46,8 +36,8 @@ header h1 {
 
 .container {
     display: flex;
-    height: 79rem;
-    width: 100%;
+    min-width: 853px;
+    height: 120rem;
 }
 
 /*-----LEFT COLUMN-----*/
@@ -55,8 +45,8 @@ header h1 {
 .left-column {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 28%;
+    min-width: 400px;
+    max-width: 700px;
     background-color: rgb(13, 17, 23);
     border-right: 1px solid #30363d;
 }
@@ -65,19 +55,16 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     width: 100%;
-    height: 25.9rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.2rem;
+    margin-top: 3rem;
 }
 
-.sizer-one {
-    height: 10rem;
-    width: 100%;
-}
+
 
 .photo {
     width: 332.58px;
+    min-width: 230.58px;
     height: auto;
 }
 
@@ -96,7 +83,7 @@ header h1 {
 .workandskills-style {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     margin-left: 20.5%;
     margin-bottom: 2rem;
@@ -125,7 +112,7 @@ background-color: white;
 }
 
 .works {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: white;
     margin-left: 20.5%;
     margin-bottom: 0.5rem;
@@ -137,11 +124,12 @@ background-color: white;
 .skill {
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
   
 
 .skills {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: white;
     margin-left: 20.5%;
     margin-bottom: 0.5rem;
@@ -156,9 +144,8 @@ background-color: white;
 /*-----RIGHT COLUMN-----*/
 
 .right-column {
-    height: 100%;
-    width: 72%;
     background-color: rgb(0, 0, 0);
+    width: 100%;
 }
 
 
@@ -172,6 +159,7 @@ background-color: white;
 
 .profile-name {
     height: 9.89rem;
+    min-width: 415px;
     font-size: 4rem;
     font-weight: 400;
 }
@@ -190,7 +178,7 @@ background-color: white;
     color: white;
     margin-bottom: 4rem;
     border-bottom: 2px solid white;
-    width: 40.69rem;
+    width: 40.83rem;
     height: 4.7rem;
 }
 
@@ -238,7 +226,7 @@ background-color: white;
     align-items: flex-end;
     margin-left: 4rem;
     height: 5rem;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 400;
     margin-bottom: 3rem;
     color: white;
@@ -255,13 +243,13 @@ background-color: white;
 
 .contact-properties {
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     margin-bottom: 0.6rem;
 }
 
 .contact-values {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #0089D4;
 }
 
@@ -299,70 +287,209 @@ background-color: white;
 
 #timeline-section {
     display: none;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7rem;
-    height: 22rem;
-    width: 37.49rem;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 4rem;
 }
 
-
-.bar-one {
-    height: 0.7rem;
-    width: 100%;
-    background-color: #0089D4;
-    top: 1rem;
-    left: 0rem;
-}
-
-.bar-two {
-    position: absolute;
-    height: 4rem;
-    width: 1rem;
-    top: 45rem;
-    left: 49.55rem;
-    background-color: #0089D4;
-}
-
-
-.bar-two-info {
+.timeline-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 39rem;
-    left: 47rem;
+    align-items: start;
+    margin-bottom: 4rem;
+    
 }
 
-
-.bar-three {
-    position: absolute;
-    height: 4rem;
-    width: 1rem;
-    top: 49rem;
-    left: 72.55rem;
-    background-color: #0089D4;
-}
-
-
-.bar-three-info span {
+.time-text-title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
     color: white;
-    font-size: 2rem;
-    font-weight: 300;
-}
-.bar-three-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 54rem;
-    left: 70.5rem;
 }
 
-.bar-two-info span {
-    color: white;
-    font-size: 2rem;
+.timeline-text {
+    font-size: 2.2rem;
     font-weight: 300;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+/*-----Media-----*/
+
+@media only screen and (max-width: 580px) {
+
+
+
+
+    .font-white {
+        color: white;
+    }
+
+    #container {
+        display: none;
+    }
+
+    body {
+        background-color: #1A2433;
+    }
+
+    .mobile-nav-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5rem;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    #mobile-nav-button {
+        height: auto;
+        width: 3.1rem;
+        margin-left: 2rem;
+    }
+
+    .color {
+        background-color: #334766;
+        height: 29rem;
+        margin-bottom: 4rem;
+    }
+
+
+
+    .mobile-photo-container{
+        display: flex;
+        flex-direction: column;
+        height: 29rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-profile-photo {
+        height: auto;
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-profile-name-container  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-name {
+        font-size: 2.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .mobile-speciality {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .mobile-buttons-container {
+        display: flex;
+        height: 5rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #mobile-about, #mobile-timeline {
+        font-size: 3rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+
+    #mobile-work-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 2.5rem;
+        height: 10rem;
+    }
+
+    .mobile-work-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-skills-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-work-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-work-skills-text {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    #mobile-skills-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 2.5rem;
+    }
+
+    .mobile-skills-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 580px) {
+    #mobile-container {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 890px) {
+    .contact-principal-information-container {
+        margin-left: 2rem;
+    }
+
+    .dynamic-buttons-container-one {
+        margin-left: 2rem;
+    }
+
+    .information-title {
+        margin-left: 2rem;
+    }
+
+    .contact-secondary-information-container {
+        margin-left: 2rem;
+    }
 }

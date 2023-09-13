@@ -303,7 +303,6 @@ background-color: white;
     flex-direction: column;
     align-items: start;
     margin-bottom: 4rem;
-    
 }
 
 .time-text-title {
@@ -372,12 +371,7 @@ background-color: white;
         margin: 0;
     }
 
-    .dynamic-information-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin-top: 5rem;
-    }
+
     
     .dynamic-information-center-container {
         display: flex;
@@ -409,6 +403,73 @@ background-color: white;
     .work-container {
         margin-top: 10rem;
     }
+
+
+
+    #eye-open-two-switch {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        height: auto;
+        width: 3rem;
+        left: 12.5rem;
+        top: 0.65rem;
+    }
+    
+    #eye-closed-two-switch {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        height: auto;
+        width: 3rem;
+        left: 9.5rem;
+        top: 0.99rem;
+    }
+    
+    .eye-open-two{
+        cursor: pointer;
+        position: absolute;
+        height: auto;
+        width: 3rem;
+        left: 9.5rem;
+        top: 0.65rem;
+    }
+    
+
+    .eye-closed-two {
+        cursor: pointer;
+        position: absolute;
+        height: auto;
+        width: 3rem;
+        left: 12.5rem;
+        top: 0.99rem;
+    }
+
+
+    #dynamic-information-container-two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+
+    #timeline-section-two{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20rem;
+    }
+
+    .timeline-list-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    
 }
 
 
@@ -576,6 +637,7 @@ background-color: white;
         font-weight: 400;
         margin-left: 2.3rem;
     }
+
 }
 
 

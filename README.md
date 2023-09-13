@@ -14,7 +14,7 @@ The webpage design is minimalistic without losing accessibility.
 
 ## ¿How to use?
 
-Use the url: https://zeek-8.github.io/portfolio/ 
+Use the url: https://zeek-8.github.io/self/ 
 
 
 ## Technologies

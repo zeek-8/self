@@ -117,6 +117,12 @@
                 </div>
             </div>
 
+            <div id="nav-objects-container">
+                <div class="nav-about-object font-white object-title"><span>About</span></div>
+                <div class="nav-timeline-object font-white object-title"><span>Timeline</span></div>
+                <div class="nav-work-skills-object font-white object-title"><span>Work & Skills</span></div>
+            </div>
+
         </div>
     </main>
 
@@ -164,6 +170,25 @@
         timelineEye.addEventListener("click", toggleEye);
         aboutEyeSwitch.addEventListener("click", toggleAbout);
 
+    </script>
+
+    <script>
+        const navButton = document.getElementById("mobile-nav-button");
+        const navPage = document.getElementById("nav-objects-container");
+
+
+        function toggleNavButton() {
+            if (navPage.style.display == "none") {
+                navPage.style.display = "flex";
+                
+
+            } else {
+                navPage.style.display = "none";
+            }
+        }
+
+            navButton.addEventListener("touchend", toggleNavButton)
+        
     </script>
 </body>
 

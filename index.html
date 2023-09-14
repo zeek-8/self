@@ -212,6 +212,25 @@
 
     <footer>
     </footer>
+
+    <script>
+        const navButton = document.getElementById("mobile-nav-button");
+        const navPage = document.getElementById("nav-objects-container");
+        const objectTitles = document.getElementsByClassName("object-title");
+        const objectSpans = document.getElementsByClassName("object-span");
+
+        function toggleNavButton() {
+            if (navPage.style.left == "-600px") {
+                navPage.style.left = "0px";
+            
+            } else {
+                navPage.style.left = "-600px";
+            }
+        }
+
+            navButton.addEventListener("touchend", toggleNavButton)
+        
+    </script>
     
     <script>
         const aboutEye = document.getElementById("eye-open");
@@ -300,24 +319,7 @@
         aboutEyeSwitchTwo.addEventListener("click", toggleAboutTwo);
     </script>
 
-    <script>
-        const navButton = document.getElementById("mobile-nav-button");
-        const navPage = document.getElementById("nav-objects-container");
-        const objectTitles = document.getElementsByClassName("object-title");
-        const objectSpans = document.getElementsByClassName("object-span");
 
-        function toggleNavButton() {
-            if (navPage.style.left == "-600px") {
-                navPage.style.left = "0px";
-            
-            } else {
-                navPage.style.left = "-600px";
-            }
-        }
-
-            navButton.addEventListener("touchend", toggleNavButton)
-        
-    </script>
 </body>
 
 

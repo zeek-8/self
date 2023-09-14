@@ -199,9 +199,9 @@
             </div>
 
             <div id="nav-objects-container">
-                <div class="nav-about-object font-white object-title"><span>About</span></div>
-                <div class="nav-timeline-object font-white object-title"><span>Timeline</span></div>
-                <div class="nav-work-skills-object font-white object-title"><span>Work & Skills</span></div>
+                <div class="nav-about-object font-white object-title"><span class="object-span">About</span></div>
+                <div class="nav-timeline-object font-white object-title" ><span class="object-span">Timeline</span></div>
+                <div class="nav-work-skills-object font-white object-title"><span class="object-span">Work & Skills</span></div>
             </div>
 
         </div>
@@ -300,15 +300,32 @@
     <script>
         const navButton = document.getElementById("mobile-nav-button");
         const navPage = document.getElementById("nav-objects-container");
-
+        const objectTitles = document.getElementsByClassName("object-title");
+        const objectSpans = document.getElementsByClassName("object-span");
 
         function toggleNavButton() {
-            if (navPage.style.display == "none") {
-                navPage.style.display = "flex";
+            if (navPage.style.left == "-400px") {
+                navPage.style.left = "0px";
+                
+                for (let i = 0; i < objectTitles.length; i++){
+                    objectTitles[i].style.opacity = "1"
+                }
+                
+                for (let i = 0; i < objectSpans.length; i++){
+                    objectSpans[i].style.opacity = "1"
+                }
+                
                 
 
             } else {
-                navPage.style.display = "none";
+                navPage.style.left = "-400px";
+                for (let i = 0; i < objectTitles.length; i++){
+                    objectTitles[i].style.opacity = "0"
+                }
+                for (let i = 0; i < objectSpans.length; i++){
+                    objectSpans[i].style.opacity = "0"
+                }
+                
             }
         }
 

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./ID/style.css" rel="stylesheet">
+    <style>
+        @import url("https://use.typekit.net/smw2qnk.css");
+    </style>
     <title>Portfolio</title>
 </head>
 <body>
@@ -168,15 +171,15 @@
                 <img id="mobile-nav-button" src="./ID/images/mobile-nav-button.png">
             </nav>
 
-            <div class="color">
-                <div class="mobile-photo-container">
-                    <img class="mobile-profile-photo" src="./ID/images/yo.jpg">
-                    <div class="mobile-profile-name-container">
-                        <span class="mobile-name font-white">Hugo Gonzalez Alvarez</span>
-                        <span class="mobile-speciality font-white ">Front End Developer</span>
-                    </div>
+            
+            <div class="mobile-photo-container">
+                <img class="mobile-profile-photo" src="./ID/images/yo.jpg">
+                <div class="mobile-profile-name-container">
+                    <span class="mobile-name font-white">Hugo Gonzalez Alvarez</span>
+                    <span class="mobile-speciality font-white ">Front End Developer</span>
                 </div>
             </div>
+        
 
 
             <div id="mobile-work-container">
@@ -304,28 +307,11 @@
         const objectSpans = document.getElementsByClassName("object-span");
 
         function toggleNavButton() {
-            if (navPage.style.left == "-400px") {
+            if (navPage.style.left == "-600px") {
                 navPage.style.left = "0px";
-                
-                for (let i = 0; i < objectTitles.length; i++){
-                    objectTitles[i].style.opacity = "1"
-                }
-                
-                for (let i = 0; i < objectSpans.length; i++){
-                    objectSpans[i].style.opacity = "1"
-                }
-                
-                
-
+            
             } else {
-                navPage.style.left = "-400px";
-                for (let i = 0; i < objectTitles.length; i++){
-                    objectTitles[i].style.opacity = "0"
-                }
-                for (let i = 0; i < objectSpans.length; i++){
-                    objectSpans[i].style.opacity = "0"
-                }
-                
+                navPage.style.left = "-600px";
             }
         }
 

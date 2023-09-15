@@ -646,6 +646,7 @@ background-color: white;
         column-gap: 8rem;
         overflow-x: auto;
         align-items: start;
+        overscroll-behavior-inline: contain;
     }
 
 

@@ -501,7 +501,7 @@ background-color: white;
     .mobile-photo-container{
         display: flex;
         flex-direction: column;
-        height: 27rem;
+        height: 39rem;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -540,17 +540,19 @@ background-color: white;
 
     .mobile-basic-information-container {
         display: flex;
-        width: 40.5rem;
         align-items: center;
         justify-content: space-around;
-        margin-top: 16rem;
+        margin-top: 9rem;
     }
 
 
     /*mobile-contact-information*/
 
     .mobile-contact-information {
-        width: 33.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -640,22 +642,24 @@ background-color: white;
         display: grid;
         height: 52rem;
         grid-auto-flow: column;
-        grid-auto-columns: 40%;
-        column-gap: 36rem;
+        grid-auto-columns: 100%;
+        column-gap: 8rem;
         overflow-x: auto;
         align-items: start;
     }
 
 
-
-
-
-
-
-
-
-
     /*-----------------------------------*/
+
+
+
+    /*CONTACT SECONDARY INFORMATION CONTAINER*/ 
+    .contact-secondary-information-container {
+        display: flex;
+        width: 58.8%;
+        justify-content: flex-start;
+        align-items: start;
+    }
 }
 
 

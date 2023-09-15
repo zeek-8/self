@@ -166,10 +166,11 @@
             </div>
         </div>
 
+
+
+
         <div id="mobile-container">
-            <nav class="mobile-nav-container">
-                <img id="mobile-nav-button" src="./ID/images/mobile-nav-button.png">
-            </nav>
+
 
             
             <div class="mobile-photo-container">
@@ -180,32 +181,53 @@
                 </div>
             </div>
         
+            <div class="horizontal-scroll-container">
 
+                <div class="mobile-basic-information-container">
+                    <div class="mobile-work-container">
+                        <span class="mobile-work-title font-white">WORK</span>
+                        <div class="mobile-work-text-container ">
+                            <span class="mobile-work-skills-text font-white">Currently Studying</span>
+                            <span class="mobile-work-skills-text font-white">Freelancer</span>
+                        </div>
+                    </div>
 
-            <div id="mobile-work-container">
-                <span class="mobile-work-title font-white">WORK</span>
-                <div class="mobile-work-text-container">
-                    <span class="mobile-work-skills-text font-white">Currently Studying</span>
-                    <span class="mobile-work-skills-text font-white">Freelancer</span>
+                    
+                    <div class="mobile-skills-container ">
+                        <span class="mobile-skills-title font-white">SKILLS</span>
+
+                        <div class="mobile-skills-text-container">
+                            <span class="mobile-work-skills-text font-white">HTML</span>
+                            <span class="mobile-work-skills-text font-white">CSS</span>
+                            <span class="mobile-work-skills-text font-white">JS</span>
+                            <span class="mobile-work-skills-text font-white">Git & Github</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="mobile-skills-container">
 
-                <span class="mobile-skills-title font-white">SKILLS</span>
 
-                <div class="mobile-skills-text-container">
-                    <span class="mobile-work-skills-text font-white">HTML</span>
-                    <span class="mobile-work-skills-text font-white">CSS</span>
-                    <span class="mobile-work-skills-text font-white">JS</span>
-                    <span class="mobile-work-skills-text font-white">Git & Github</span>
+                <div class="mobile-contact-information ">
+                    
+
+                    <div class="contact-secondary-information-container" >
+                        <div class="information-title">Contact Information</div>
+                        <span class="contact-properties">Phone: <span class="contact-values">555-777-9999</span></span>
+                        <span class="contact-properties">Address: <span class="contact-values">Cancun, Mex</span></span>
+                        <span class="contact-properties">E-mail: <span class="contact-values">hello_string@outlook.com</span></span>
+                    </div>
+
+                    
+
+                    <div class="contact-secondary-information-container">
+                        <div class="information-title">Basic Information</div>
+                        <span class="contact-properties">Birthday: <span class="contact-values">Nov, 8, 2000</span></span>
+                        <span class="contact-properties">Gender: <span class="contact-values">Male</span></span>
+                    </div>
                 </div>
+
             </div>
 
-            <div id="nav-objects-container">
-                <div class="nav-about-object font-white object-title"><span class="object-span">About</span></div>
-                <div class="nav-timeline-object font-white object-title" ><span class="object-span">Timeline</span></div>
-                <div class="nav-work-skills-object font-white object-title"><span class="object-span">Work & Skills</span></div>
-            </div>
+
 
         </div>
     </main>
@@ -213,24 +235,6 @@
     <footer>
     </footer>
 
-    <script>
-        const navButton = document.getElementById("mobile-nav-button");
-        const navPage = document.getElementById("nav-objects-container");
-        const objectTitles = document.getElementsByClassName("object-title");
-        const objectSpans = document.getElementsByClassName("object-span");
-
-        function toggleNavButton() {
-            if (navPage.style.left == "-600px") {
-                navPage.style.left = "0px";
-            
-            } else {
-                navPage.style.left = "-600px";
-            }
-        }
-
-            navButton.addEventListener("touchend", toggleNavButton)
-        
-    </script>
     
     <script>
         const aboutEye = document.getElementById("eye-open");

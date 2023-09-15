@@ -640,11 +640,12 @@ background-color: white;
 
     .horizontal-scroll-container {
         display: grid;
-        height: 52rem;
+        height: 60rem;
         grid-auto-flow: column;
         grid-auto-columns: 100%;
         column-gap: 8rem;
         overflow-x: auto;
+        overflow-y: clip;
         align-items: start;
     }
 

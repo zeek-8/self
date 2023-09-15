@@ -68,7 +68,7 @@ header h1 {
 
 
 .photo {
-    width: 332.58px;
+    width: 296.58px;
     min-width: 230.58px;
     height: auto;
 }
@@ -363,7 +363,7 @@ background-color: white;
     
     .dynamic-buttons-container-one {
         align-self: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 4rem 0px 0px;
     }
 
@@ -409,7 +409,7 @@ background-color: white;
         position: absolute;
         height: auto;
         width: 3rem;
-        left: 9.5rem;
+        left: 13rem;
         top: 0.99rem;
     }
     
@@ -418,7 +418,7 @@ background-color: white;
         position: absolute;
         height: auto;
         width: 3rem;
-        left: 9.5rem;
+        left: 13rem;
         top: 0.65rem;
     }
     
@@ -457,6 +457,13 @@ background-color: white;
         margin-bottom: 5rem;
     }
     
+
+    .about-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+    }
 }
 
 
@@ -509,7 +516,7 @@ background-color: white;
 
     .mobile-profile-photo {
         height: auto;
-        width: 20rem;
+        width: 17rem;
         margin-bottom: 1rem;
     }
 
@@ -658,7 +665,6 @@ background-color: white;
     /*CONTACT SECONDARY INFORMATION CONTAINER*/ 
     .contact-secondary-information-container {
         display: flex;
-        width: 58.8%;
         justify-content: flex-start;
         align-items: start;
     }

@@ -16,6 +16,11 @@ The webpage design is minimalistic without losing accessibility.
 
 Use the url: https://zeek-8.github.io/self/ 
 
+Click on the eyes to change section.
+
+Mobile version scroll horizontaly to view more.
+
+
 
 ## Technologies
 

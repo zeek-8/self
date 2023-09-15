@@ -664,7 +664,6 @@ background-color: white;
     /*CONTACT SECONDARY INFORMATION CONTAINER*/ 
     .contact-secondary-information-container {
         display: flex;
-        width: 58.8%;
         justify-content: flex-start;
         align-items: start;
     }

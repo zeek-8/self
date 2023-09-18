@@ -363,7 +363,7 @@ background-color: white;
     
     .dynamic-buttons-container-one {
         align-self: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin: 4rem 0px 0px;
     }
 
@@ -680,6 +680,10 @@ background-color: white;
 
      .font-blue {
         color: #0089D4;
+     }
+
+     .mobile-contact-information-features {
+        margin-top: 0rem;
      }
 }
 

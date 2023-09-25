@@ -18,7 +18,6 @@ Use the url: https://zeek-8.github.io/self/
 
 Click on the eyes to change section.
 
-Mobile version scroll horizontaly to view more.
 
 
 

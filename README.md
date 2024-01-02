@@ -16,7 +16,7 @@ The webpage design is minimalistic without losing accessibility.
 
 Use the url: https://zeek-8.github.io/self/ 
 
-Click on the eyes to change section.
+Click on the eyes to change section, only desktop and tablet
 
 
 
